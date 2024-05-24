@@ -3,15 +3,19 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+
+// Styles
 import './scss/App.scss';
 
 export default function App() {
   return (
-    <main>
+    <div className="main-wrapper">
       <Navbar />
-      <About />
-      <Projects />
-      <Contact />
-    </main>
+      <main className="main-container">
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+    </div>
   );
 }
