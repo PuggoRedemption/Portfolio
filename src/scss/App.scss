@@ -30,6 +30,20 @@ html, body, #root {
     padding-top: 1rem;
 }
 
+.sidebar-menu-header {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* .sidebar-menu-header #Name {
+    padding-bottom: 0;
+}
+
+.sidebar-menu-header #Thumbnail {
+    padding-top: 0;
+} */
+
 .sidebar-menu {
     padding-top: 0;
     flex-direction: column;
@@ -37,6 +51,21 @@ html, body, #root {
     overflow-y: auto;
 }
 
-.sub-link {
+img {
+    text-align: center;
+    border-radius: 400px;
+    width: 50%;
+}
 
+/* .sidebar-menu-nav-link {
+    color: black !important;
+
+    &:hover,
+    &:focus {
+        color: $sidebar-menu-dark-hover-color !important;
+    }
+} */
+
+.sub-link {
+    padding-left: 32px !important;
 }
