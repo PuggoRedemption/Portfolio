@@ -57,15 +57,47 @@ img {
     width: 50%;
 }
 
-/* .sidebar-menu-nav-link {
-    color: black !important;
-
-    &:hover,
-    &:focus {
-        color: $sidebar-menu-dark-hover-color !important;
-    }
-} */
-
 .sub-link {
     padding-left: 32px !important;
+}
+
+.delay-1 {
+    animation-delay: 0.4s;
+}
+
+.delay-2 {
+    animation-delay: 0.7s;
+}
+
+.animation-open {
+    opacity: 0;
+    animation-duration: 0.6s;
+    animation-name: fade-in;
+    animation-timing-function: cubic-bezier(.17, 0, .3, 1.8);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translate(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(100px);
+    }
+  }
+
+@supports (translate: 0deg) {
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            translate: 0px;
+        }
+    
+        100% {
+            opacity: 1;
+            translate: 200px;
+        }
+    }
 }
