@@ -101,3 +101,20 @@ img {
         }
     }
 }
+
+div .contact-form {
+    margin: auto;
+    width: 60%;
+}
+
+div .contact-form * {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+button {
+    border-radius: 40px;
+}
