@@ -7,8 +7,10 @@ import Projects from "./components/Projects";
 // Styles
 import './scss/App.scss';
 
+// Main Page
 export default function App() {
   return (
+    // Separate the Navbar from other components.
     <div className="main-wrapper">
       <Navbar />
       <main className="main-container">

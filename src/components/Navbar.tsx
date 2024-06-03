@@ -1,5 +1,5 @@
 import Sidebar from "react-bootstrap-sidebar-menu";
-import thumbnail from "../assets/thumbnail.jpg";
+import Thumbnail from "../assets/Thumbnail.jpg";
 
 // Set up SideBar Navigation Content as Links
 export default function () {
@@ -10,7 +10,7 @@ export default function () {
                     <Sidebar.Brand>Jaeger Staeven</Sidebar.Brand>
                 </Sidebar.Header>
                 <Sidebar.Header id="Thumbnail">
-                    <Sidebar.Brand><img src={thumbnail} alt="thumbnail"/></Sidebar.Brand>
+                    <Sidebar.Brand><img src={Thumbnail} alt="Thumbnail"/></Sidebar.Brand>
                 </Sidebar.Header>
                 <Sidebar.Body>
                     <Sidebar.Nav>

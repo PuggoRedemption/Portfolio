@@ -1,3 +1,4 @@
+// Contact Form
 export default function Contact() {
     return (
         <div className="contact-form">
