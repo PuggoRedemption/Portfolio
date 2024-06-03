@@ -8,6 +8,11 @@
 
     /* Vite Typescript Fix for static asset imports */
     "types": ["vite/client"],
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@assets/*": ["assets/*"],
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
