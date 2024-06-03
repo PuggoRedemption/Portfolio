@@ -26,7 +26,8 @@ html, body, #root {
 .main-container {
     grid-area: main;
     box-shadow: inset 2px 1px 9px 1px  rgba($dark, 0.10);
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding-top: 1rem;
 }
 
@@ -35,14 +36,6 @@ html, body, #root {
     text-align: center;
     width: 100%;
 }
-
-/* .sidebar-menu-header #Name {
-    padding-bottom: 0;
-}
-
-.sidebar-menu-header #Thumbnail {
-    padding-top: 0;
-} */
 
 .sidebar-menu {
     padding-top: 0;
@@ -100,6 +93,45 @@ img {
             translate: 200px;
         }
     }
+}
+
+.card.project-card {
+    align-items: center;
+    width: 60%;
+    border-radius: 40px;
+    transition: all .3s ease-in-out;
+}
+
+.card.project-card:hover {
+    width: 65%;
+    border-radius: 40px;
+}
+
+.card.project-card * {
+    border-radius: 40px;
+}
+
+.card.Img {
+    object-fit: cover;
+}
+
+.card-overlay {
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.card-overlay:hover {
+    opacity: 1;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.card-title {
+    color: white;
+    font-size: 70px;
+}
+
+.card-text {
+    color: white;
 }
 
 div .contact-form {
