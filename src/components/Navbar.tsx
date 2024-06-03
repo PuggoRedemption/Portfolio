@@ -1,5 +1,5 @@
 import Sidebar from "react-bootstrap-sidebar-menu";
-import Thumbnail from "../assets/Thumbnail.jpg";
+import Thumbnail from "src/assets/Thumbnail.jpg";
 
 // Set up SideBar Navigation Content as Links
 export default function () {
