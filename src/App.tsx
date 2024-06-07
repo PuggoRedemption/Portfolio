@@ -16,7 +16,7 @@ export default function App() {
         <About />
         <Projects />
         <div className="contact-form">
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST">
             <input type="hidden" name="form-name" value="contact" />
             <h1>Email Me</h1>
             <h3>Full Name</h3>
