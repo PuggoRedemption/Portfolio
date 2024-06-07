@@ -1,6 +1,5 @@
 // import React from "react";
 import About from "./components/About";
-// import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 
@@ -16,7 +15,6 @@ export default function App() {
       <main className="main-container">
         <About />
         <Projects />
-        {/* <Contact /> */}
         <div className="contact-form">
             <form name="contact" method="POST" data-netlify="true">
                 <h1>Email Me</h1>
