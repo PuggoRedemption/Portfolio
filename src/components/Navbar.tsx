@@ -3,13 +3,13 @@ import Sidebar from "react-bootstrap-sidebar-menu";
 // Set up SideBar Navigation Content as Links
 export default function () {
     return (
-        <Sidebar expand="md">
-            <Sidebar.Collapse getScrollValue={500}>
+        <Sidebar expand="md" hide="md">
+            <Sidebar.Collapse>
                 <Sidebar.Header id="Name">
                     <Sidebar.Brand>Jaeger Staeven</Sidebar.Brand>
                 </Sidebar.Header>
-                <Sidebar.Header id="Thumbnail">
-                    <Sidebar.Brand><img src="Thumbnail.jpg" alt="Thumbnail"/></Sidebar.Brand>
+                <Sidebar.Header>
+                    <Sidebar.Brand id="Thumbnail"><img src="Thumbnail.jpg" alt="Thumbnail-img" /></Sidebar.Brand>
                 </Sidebar.Header>
                 <Sidebar.Body>
                     <Sidebar.Nav>
@@ -36,5 +36,4 @@ export default function () {
             </Sidebar.Collapse>
         </Sidebar>
     );
-    
 }

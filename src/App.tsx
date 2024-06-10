@@ -1,7 +1,18 @@
-// import React from "react";
+// import components from project;
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+
+// import external 
+import MediaQuery from "react-responsive";
+import Favicon from "react-favicon";
+
+// Declare Breakpoints
+// const breakpoints = {
+//   desktop: '(min-width: 1025px)',
+//   tablet: '(min-width: 768px) and (max-width: 1024px)',
+//   phone: '(max-width: 768px)'
+// };
 
 // Styles
 import './scss/App.scss';
@@ -11,8 +22,14 @@ export default function App() {
   return (
     // Separate the Navbar from other components.
     <div className="main-wrapper">
+      <Favicon url="/Thumbnail.jpg" />
       <Navbar />
       <main className="main-container">
+        <MediaQuery query="(max-width: 766px)">
+          <div className="menu-toggle">
+            <img src="/Menu.png" alt="menu-toggle"/>
+          </div>
+        </MediaQuery>
         <About />
         <Projects />
         <div className="contact-form">
