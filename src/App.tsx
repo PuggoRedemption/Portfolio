@@ -1,27 +1,26 @@
 // import components from project;
-import About from "./components/About";
 import Navbar from "./components/Navbar";
+import PopupMenu from "./components/PopupMenu";
+import About from "./components/About";
 import Projects from "./components/Projects";
 
 // import external 
 import MediaQuery from "react-responsive";
 import Favicon from "react-favicon";
 
-// Declare Breakpoints
-// const breakpoints = {
-//   desktop: '(min-width: 1025px)',
-//   tablet: '(min-width: 768px) and (max-width: 1024px)',
-//   phone: '(max-width: 768px)'
-// };
-
 // Styles
 import './scss/App.scss';
 
 // Main Page
 export default function App() {
+  // const menuClick = () => {
+  //   document.getElementById("navbar")?.classList.toggle("sidebar-menu-hide-md");
+  // };
+
   return (
     // Separate the Navbar from other components.
     <div className="main-wrapper">
+
       {/* Favicon for tab icon */}
       <Favicon url="/Thumbnail.jpg" />
 
@@ -37,6 +36,9 @@ export default function App() {
             <img src="/Menu.png" alt="menu-toggle"/>
           </div>
         </MediaQuery>
+
+        {/* Pop-up Menu for Mobile */}
+        <PopupMenu />
 
         {/* Initial about statement */}
         <About />
