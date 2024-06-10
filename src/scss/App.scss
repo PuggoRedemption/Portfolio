@@ -45,9 +45,17 @@ html, body, #root {
 }
 
 .about-text {
-    margin: auto;
-    width: 30%;
-    max-width: 388px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 500px;
+    margin-bottom: 500px;
+    width: 48%;
+    max-width: 734px;
+}
+
+.about-text h1 {
+    font-size: 76px;
+    line-height: 1.5;
 }
 
 .menu-toggle {
@@ -146,6 +154,8 @@ html, body, #root {
 .card-title {
     color: white;
     font-size: 70px;
+    width: 100%;
+    text-align: center;
 }
 
 .card-text {
@@ -173,6 +183,10 @@ button {
     .sidebar-menu-collapse.show {
         width: 250px;
     }
+
+    .about-text h1 {
+        font-size: 50px;
+    }
 }
 
 @media(max-width: 900px) {
@@ -182,5 +196,29 @@ button {
 
     .sidebar-menu-body {
         padding: 8px 0;
+    }
+
+    .about-text h1 {
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 766px) {
+    .about-text h1 {
+        font-size: 39px;
+    }
+    
+    .card-title {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .about-text h1 {
+        font-size: 39px;
+    }
+    
+    .card-title {
+        font-size: 30px;
     }
 }
