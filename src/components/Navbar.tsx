@@ -8,8 +8,8 @@ export default function () {
                 <Sidebar.Header id="Name">
                     <Sidebar.Brand>Jaeger Staeven</Sidebar.Brand>
                 </Sidebar.Header>
-                <Sidebar.Header>
-                    <Sidebar.Brand id="Thumbnail"><img src="Thumbnail.jpg" alt="Thumbnail-img" /></Sidebar.Brand>
+                <Sidebar.Header id="Thumbnail">
+                    <Sidebar.Brand><img src="Thumbnail.jpg" alt="Thumbnail-img" /></Sidebar.Brand>
                 </Sidebar.Header>
                 <Sidebar.Body>
                     <Sidebar.Nav>
