@@ -22,16 +22,32 @@ export default function App() {
   return (
     // Separate the Navbar from other components.
     <div className="main-wrapper">
+      {/* Favicon for tab icon */}
       <Favicon url="/Thumbnail.jpg" />
+
+      {/* Navbar outside main container */}
       <Navbar />
+
+      {/* Main container for content to the right of navbar */}
       <main className="main-container">
+
+        {/* Menu toggle that hides when screen is too small */}
         <MediaQuery query="(max-width: 766px)">
           <div className="menu-toggle">
             <img src="/Menu.png" alt="menu-toggle"/>
           </div>
         </MediaQuery>
+
+        {/* Initial about statement */}
         <About />
+
+        {/* Project Section */}
+        <div className="project-title">
+          <h1>Projects</h1>
+        </div>
         <Projects />
+
+        {/* Contact Form */}
         <div className="contact-form">
           <form name="contact" method="POST">
             <input type="hidden" name="form-name" value="contact" />
