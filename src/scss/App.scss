@@ -125,6 +125,15 @@ html, body, #root {
     }
 }
 
+.project-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.project-title h1 {
+    font-size: 76px;
+}
+
 .card.project-card {
     align-items: center;
     width: 60%;
@@ -163,8 +172,12 @@ html, body, #root {
 }
 
 div .contact-form {
-    margin: auto;
-    width: 60%;
+    margin: 40px auto;
+    width: 40%;
+}
+
+div .contact-form h1 {
+    font-size: 76px;
 }
 
 div .contact-form * {
