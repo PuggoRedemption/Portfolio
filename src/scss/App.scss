@@ -171,13 +171,24 @@ html, body, #root {
     color: white;
 }
 
-div .contact-form {
-    margin: 40px auto;
-    width: 40%;
+.contact-section {
+    display: flex;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
 }
 
-div .contact-form h1 {
-    font-size: 76px;
+div .contact-message {
+    width: 40%;
+    padding-bottom: 60px;
+}
+
+div .contact-message h1 {
+    font-size: 60px;
+}
+
+div .contact-form {
+    width: 40%;
 }
 
 div .contact-form * {
